@@ -1,0 +1,1021 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    user-select: none;
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+                    /*___________________________________________*/
+
+body {
+    top: 15vh;
+    display: grid;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    background-color: #03142e;
+}
+
+h1 {
+    top: -30px;
+    color: white;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+h2 {
+    top: -51px;
+    opacity: 0.5;
+    color: white;
+    font-size: 13pt;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+                    /*___________________________________________*/
+form {
+    top: -50px;
+    width: 500px;
+    height: 550px;
+    display: grid;
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #05234f;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+                    /*___________________________________________*/
+
+.peso {
+    top: 60px;
+    left: 200px;
+    color: white;
+    font-size: 14pt;
+    font-weight: 600;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+
+.weight {
+    top: 100px;
+    left: 80px;
+    width: 170px;
+    height: 50px;
+    outline: none;
+    font-size: 14pt;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.747);
+    border: solid 2px rgba(0, 0, 0, 0.416);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.altura {
+    top: 5px;
+    right: 25px;
+    color: white;
+    font-size: 14pt;
+    font-weight: 600;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+                    /*___________________________________________*/
+
+
+input[type = number]::-webkit-outer-spin-button,
+input[type = number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+
+                    /*___________________________________________*/
+    
+
+.height {
+    top: 45px;
+    right: 155px;
+    width: 170px;
+    height: 50px;
+    outline: none;
+    font-size: 14pt;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.747);
+    border: solid 2px rgba(0, 0, 0, 0.416);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+    
+                    /*___________________________________________*/
+
+.bnts {
+    gap: 50px;
+    top: 195px;
+    display: grid;
+    position: absolute;
+    transform: translate(129px);
+    grid-template-columns: 100px 100px;
+}
+
+.bnts input {
+    border: none;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 12pt;
+    border-radius: 14px;
+    transition: all 0.1s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+    box-shadow: inset 0px -3px 0px rgb(255, 255, 255);
+}
+
+.send {
+    color: white;
+    font-weight: 600;
+    background-color: rgb(89, 156, 243);
+}
+
+.send:active {
+    transform: scale(1.02);
+    transform: translateY(2px);
+    box-shadow: inset 0px -3px 0px rgb(255, 255, 255), 2px 2px 5px rgba(0, 0, 0, 0.386);
+}
+
+.reset {
+    color: white;
+    font-weight: 600;
+    background-color: rgb(248, 74, 74);
+}
+
+.reset:active {
+    transform: scale(1.02);
+    transform: translateY(2px);
+    box-shadow: inset 0px -3px 0px rgb(255, 255, 255), 2px 2px 5px rgba(0, 0, 0, 0.386);
+}
+
+                    /*___________________________________________*/
+
+.IMC_LIMITS {
+    top: 255px;
+    height: 0px;
+    transform: translateX(90px);
+    position: absolute;
+}
+
+.arrow_pin {
+    top: -118px;
+    left: 145px;
+    width: 35px;
+    height: 35px;
+    rotate: 90deg;
+    position: relative;
+    border-radius: 50px;
+    transition: all .5s;
+    background-color: #345384;
+    box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
+}
+
+.arrow_pin:before {
+    left: 8px;
+    top: -76px;
+    z-index: 1;
+    content: "";
+    width: 20px;
+    height: 80px;
+    display: block;
+    position: relative;
+    background-color: #1f325b;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.below {
+    top: 125px;
+    left: 35px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(90deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    filter: drop-shadow(5px 5px 0px rgb(214, 214, 214));
+    border-bottom: 50px solid rgb(89, 156, 243);
+}
+
+.normal {
+    top: 20px;
+    left: 60px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(140deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    filter: drop-shadow(5px 5px 0px rgb(214, 214, 214));
+    border-bottom: 50px solid rgb(127, 243, 89);
+}
+
+.above {
+    top: -55px;
+    left: 123px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(180deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    filter: drop-shadow(0px 5px 0px rgb(214, 214, 214));
+    border-bottom: 50px solid rgb(250, 155, 53);
+}
+
+
+
+.obesity_extreme {
+    top: -80px;
+    left: 185px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(220deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    filter: drop-shadow(-5px 5px 0px rgb(214, 214, 214));
+    border-bottom: 50px solid rgb(250, 92, 53);
+}
+
+
+.danger {
+    top: -75px;
+    left: 210px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(-90deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    filter: drop-shadow(-5px 5px 0px rgb(214, 214, 214));
+    border-bottom: 50px solid rgb(252, 61, 61);
+}
+
+                    /*___________________________________________*/
+
+.IMC_TEXT_RESULT {
+    top: 451px;
+    transform: translateX(169px);
+    position: absolute;
+}
+
+.IMC_DISPLAY {
+    width: 160px;
+    height: 30px;
+    font-size: 14pt;
+    font-weight: 600;
+    user-select: none;
+    border-radius: 15px;
+    background-color: aliceblue;
+    color: rgba(0, 0, 0, 0.685);
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+}
+
+
+
+                    /*___________________________________________*/
+
+
+
+.IMC_BODY_DESC {
+    right: 0px;
+    top: -133px;
+    z-index: -1;
+    width: 310px;
+    height: 400px;
+    position: relative;
+    border-radius: 15px;
+    transition: right .6s;
+    background-color: #1f325b;
+    text-shadow: 1px 1px 5px black;
+    color: rgba(255, 255, 255, 0.808);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.IMC_DESCR span {
+    font-size: 12pt;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.IMC_DESCR span:nth-child(1) {
+    top: 55px;
+    left: 90px;
+    position: absolute;
+}
+
+.IMC_DESCR span:nth-child(2) {
+    top: 125px;
+    left: 90px;
+    position: absolute;
+}
+
+.IMC_DESCR span:nth-child(3) {
+    top: 190px;
+    left: 90px;
+    position: absolute;
+}
+
+.IMC_DESCR span:nth-child(4) {
+    top: 255px;
+    left: 90px;
+    position: absolute;
+}
+
+.IMC_DESCR span:nth-child(5) {
+    top: 320px;
+    left: 90px;
+    position: absolute;
+}
+
+                    /*_______________ List Levels no Animations __________________*/
+
+.IMC_LEVELS{
+    top: 20px;
+    right: 20px;
+    position: relative;
+}
+
+
+.below_desc {
+    top: 25px;
+    left: 35px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(-180deg);
+    border-left: 25px solid transparent;
+    border-right: 18px solid transparent;
+    filter: drop-shadow(5px 5px 0px rgb(214, 214, 214));
+    border-bottom: 45px solid rgb(89, 156, 243);
+}
+
+.normal_desc {
+    top: 50px;
+    left: 35px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(180deg);
+    border-left: 25px solid transparent;
+    border-right: 18px solid transparent;
+    filter: drop-shadow(5px 5px 0px rgb(214, 214, 214));
+    border-bottom: 45px solid rgb(127, 243, 89);
+}
+
+.above_desc {
+    top: 70px;
+    left: 35px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(180deg);
+    border-left: 25px solid transparent;
+    border-right: 18px solid transparent;
+    filter: drop-shadow(5px 5px 0px rgb(214, 214, 214));
+    border-bottom: 45px solid rgb(250, 155, 53);
+}
+
+.obesity_extreme_desc {
+    top: 90px;
+    left: 35px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(180deg);
+    border-left: 25px solid transparent;
+    border-right: 18px solid transparent;
+    filter: drop-shadow(5px 5px 0px rgb(214, 214, 214));
+    border-bottom: 45px solid rgb(250, 92, 53);
+}
+
+.danger_desc {
+    top: 110px;
+    left: 35px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotate(180deg);
+    border-left: 25px solid transparent;
+    border-right: 18px solid transparent;
+    filter: drop-shadow(5px 5px 0px rgb(214, 214, 214));
+    border-bottom: 45px solid rgb(252, 61, 61);
+}
+
+
+                    /*________________ List All Text's __________________*/
+
+.IMC_BODY_LIST {
+    top: -133px;
+    z-index: -1;
+    right: 305px;
+    width: 310px;
+    height: 400px;
+    position: relative;
+    border-radius: 15px;
+    transition: right .6s;
+    background-color: #1f325b;
+    text-shadow: 1px 1px 5px black;
+    color: rgba(255, 255, 255, 0.808);
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+}
+
+.below_text {
+
+    filter: contrast(3);
+    color: rgb(89, 156, 243);
+}
+
+.normal_text {
+    transition: all .4s;
+    filter: contrast(3);
+    color: rgb(89, 243, 102);
+}
+
+.above_text {
+    transition: all .4s;
+    filter: contrast(3);
+    color: rgb(255, 167, 35);
+}
+
+.obesity_text {
+    transition: all .4s;
+    filter: contrast(3);
+    color: rgb(255, 123, 0);
+}
+
+.danger_text {
+    transition: all .4s;
+    filter: contrast(3);
+    color: rgb(255, 31, 31);
+}
+
+
+
+                    /*______________ Graphic Below ______________*/
+
+.below_arrow {
+    top: -118px;
+    left: 145px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    rotate: -90deg;
+    border-radius: 50px;
+    transition: all .5s;
+    background-color: #345384;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.below_arrow::before {
+    left: 8px;
+    top: -76px;
+    z-index: 1;
+    content: "";
+    width: 20px;
+    height: 80px;
+    display: block;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #1f325b;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.below_graphic {
+    top: 125px;
+    left: 20px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transition-delay: .3s;
+    transform: rotate(90deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(89, 156, 243);
+    filter: drop-shadow(5px 5px 0px rgb(214, 214, 214));
+}
+
+                    /*_________________ Normal Graphic __________________*/
+
+.normal_arrow {
+    top: -118px;
+    left: 145px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transform: rotate(-50deg);
+    border-radius: 50px;
+    transition: all .5s;
+    background-color: #345384;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.normal_arrow::before {
+    left: 8px;
+    top: -76px;
+    z-index: 1;
+    content: "";
+    width: 20px;
+    height: 80px;
+    display: block;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #1f325b;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.normal_graphic {
+    top: 5px;
+    left: 45px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transition-delay: .3s;
+    transform: rotate(140deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(127, 243, 89);
+    filter: drop-shadow(5px 5px 0px rgb(214, 214, 214));
+}
+
+                    /*__________________ Above Graphic ___________________*/
+
+.above_arrow {
+    top: -118px;
+    left: 145px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transform: rotate(0deg);
+    border-radius: 50px;
+    transition: all .5s;
+    background-color: #345384;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.above_arrow::before {
+    left: 8px;
+    top: -76px;
+    z-index: 1;
+    content: "";
+    width: 20px;
+    height: 80px;
+    display: block;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #1f325b;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.above_graphic {
+    top: -65px;
+    left: 123px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transition-delay: .3s;
+    transform: rotate(180deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(250, 155, 53);
+    filter: drop-shadow(0px 5px 0px rgb(214, 214, 214));
+}
+
+
+                    /*________________ Obesity Graphic __________________*/
+
+
+.obesity_extreme_arrow {
+    top: -118px;
+    left: 145px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transform: rotate(47deg);
+    border-radius: 50px;
+    transition: all .5s;
+    background-color: #345384;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.obesity_extreme_arrow::before {
+    left: 8px;
+    top: -76px;
+    z-index: 1;
+    content: "";
+    width: 20px;
+    height: 80px;
+    display: block;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #1f325b;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.obesity_extreme_graphic {
+    top: -95px;
+    left: 193px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transition-delay: .3s;
+    transform: rotate(220deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(250, 92, 53);
+    filter: drop-shadow(-5px 5px 0px rgb(214, 214, 214));
+}
+                
+                    /*_________________ Danger Graphic __________________*/
+
+.danger_arrow {
+    top: -118px;
+    left: 145px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transform: rotate(90deg);
+    border-radius: 50px;
+    transition: all .5s;
+    background-color: #345384;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.danger_arrow::before {
+    left: 8px;
+    top: -76px;
+    z-index: 1;
+    content: "";
+    width: 20px;
+    height: 80px;
+    display: block;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #1f325b;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.548), 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.danger_graphic {
+    top: -75px;
+    left: 225px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    transition-delay: .3s;
+    transform: rotate(-90deg);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(252, 61, 61);
+    filter: drop-shadow(-5px 5px 0px rgb(214, 214, 214));
+}
+
+
+                    /*______________ Error Messages no Animation ______________*/
+
+.MSN_ERRORS {
+    top: 88px;
+    z-index: -1;
+    left: 0px;
+    width: 200px;
+    height: 100px;
+    transition: left .6s;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+    background-color: #1f325b;
+}
+
+.MSN_ERRORS span:nth-child(1){
+    top: 10px;
+    left: 65px;
+    font-size: 14pt;
+    font-weight: 600;
+    position: absolute;
+    color: rgb(253, 81, 81);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.432);
+}
+
+.MSN_ERRORS span:nth-child(2){
+    top: 40px;
+    right: 20px;
+    width: 150px;
+    font-size: 10pt;
+    font-weight: 500;
+    color: aliceblue;
+    position: absolute;
+}
+
+
+                    /*____________ Error Messages White Animation _____________*/
+
+.MSN_ERRORS_ANIMATED {
+    top: 88px;
+    z-index: -1;
+    left: 490px;
+    width: 200px;
+    height: 100px;
+    transition: left .6s;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+    background-color: #1f325b;
+}
+
+.MSN_ERRORS_ANIMATED span:nth-child(1){
+    top: 10px;
+    left: 67px;
+    font-size: 14pt;
+    font-weight: 600;
+    position: absolute;
+    color: rgb(253, 81, 81);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.432);
+}
+
+.MSN_ERRORS_ANIMATED span:nth-child(2){
+    top: 40px;
+    right: 20px;
+    width: 150px;
+    font-size: 10pt;
+    font-weight: 500;
+    color: aliceblue;
+    position: absolute;
+}
+
+                    /*___________ Error Interactions ____________*/
+
+.height_interaction {
+    top: 45px;
+    right: 155px;
+    width: 170px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 14pt;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    transition: all .5s;
+    background-color: white;
+    color: rgba(253, 79, 79, 0.747);
+    border: solid 2px rgb(248, 95, 95);
+    animation: error_animation .2s ease-in-out ;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.weight_interaction {
+    top: 100px;
+    left: 80px;
+    width: 170px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 14pt;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    transition: all .5s;
+    border-radius: 15px;
+    background-color: white;
+    color: rgba(253, 79, 79, 0.747);
+    border: solid 2px rgb(248, 95, 95);
+    animation: error_animation .2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@keyframes error_animation {
+
+    0% {
+        margin-left: 0px;
+    }
+
+    25% {
+        margin-left: 5px;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: -5;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+
+
+                    /*______________ Mobile Screen ______________*/
+
+@media screen and (max-width: 480px){
+    
+    h1 {
+        top: -10px;
+        right: 95px;
+        font-size: 10pt;
+        position: relative;
+    }
+
+    h2 {
+        top: -21px;
+        right: 95px;
+        font-size: 9pt;
+        position: relative;
+    }
+
+    form {
+        top: -24px;
+        width: 300px;
+        height: 340px;
+        position: relative;
+    }
+
+    /*___________________________________________________*/
+    
+    .peso {
+        top: 26px;
+        left: 120px;
+        font-size: 9pt;
+        position: relative;
+    }
+
+    .weight {
+        top: 50px;
+        left: 40px;
+        width: 100px;
+        height: 30px;
+        border: none;
+        font-size: 9pt;
+        position: relative;
+        border: solid 1px rgb(66, 66, 66);
+    }
+
+    .altura {
+        top: -6px;
+        left: -30px;
+        font-size: 9pt;
+        position: relative;
+    }
+
+    .height {
+        top: 18px;
+        left: -110px;
+        width: 100px;
+        height: 30px;
+        border: none;
+        font-size: 9pt;
+        position: relative;
+        border: solid 1px rgb(66, 66, 66);
+    }
+
+        /*___________________________________________________*/
+
+    .bnts {
+        top: 160px;
+        gap: 100px;
+        left: 17px;
+        display: grid;
+        position: absolute;
+        grid-template-columns: 10px 10px;
+    }
+
+    .bnts input {
+        top: -60px;
+        gap: -10px;
+        left: -95px;
+        width: 80px;
+        height: 30px;
+        font-size: 7pt;
+        position: relative;
+    }
+
+    .IMC_LIMITS {
+        top: 133px;
+        height: 0px;
+        scale: 0.7;
+        position: absolute;
+        transform: translateX(33px);
+    }
+
+    .IMC_DISPLAY {
+        top: -188px;
+        left: -70px;
+        width: 100px;
+        height: 30px;
+        position: relative;
+    }
+
+        /*_____________________ Animations ___________________*/
+
+    .IMC_BODY_DESC {
+        scale: 0.8;
+        top: -192px;
+        position: relative;
+        transition: top .5s;
+    }
+
+    .IMC_DESCR {
+        top: -200px;
+        position: relative;
+    }
+
+    .IMC_LEVELS {
+        top: 40px;
+        position: relative;
+    }
+
+    .IMC_BODY_LIST {
+        left: 0px;
+        scale: 0.8;
+        top: 108px;
+        transition: top .5s;
+        position: relative;
+    }
+        /*___________________ Animations Two _________________*/
+
+
+    .height_interaction {
+        top: 18px;
+        left: -110px;
+        width: 100px;
+        height: 30px;
+        border: none;
+        font-size: 9pt;
+        position: relative;
+        border: solid 1px rgb(253, 93, 93);
+    }
+
+    .weight_interaction {
+        top: 50px;
+        left: 40px;
+        border: none;
+        width: 100px;
+        height: 30px;
+        font-size: 9pt;
+        position: relative;
+        border: solid 1px rgb(253, 93, 93);
+    }
+
+        /*__________________ Animations Three ________________*/
+
+    .MSN_ERRORS {
+        left: 140px;
+        top: -62px;
+        scale: 0.6;
+        position: relative;
+        transition: top .5s;
+    }
+
+    .MSN_ERRORS_ANIMATED {
+        left: 140px;
+        height: 110px;
+        top: -131px;
+        scale: 0.6;
+        position: relative;
+        transition: top .5s;
+    }
+
+    .MSN_ERRORS_ANIMATED span:nth-child(1){
+        left: 0px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+}

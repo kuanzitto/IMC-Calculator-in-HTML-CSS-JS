@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/IMC_STYLE.css">
+    <title>Project IMC</title>
+</head>
+<body>
+    <div>
+        <h1>BMI Calculate</h1>
+        <h2>Cacular IMC</h2>
+    </div>
+
+    <form action="" class="form">
+        <div class="IMC_BODY">
+            <div>
+                <span class="peso">Peso(Kg)</span>
+                <input type="text" name="weight" class="weight" maxlength="6" autocomplete="off">
+            </div>
+            <div>
+                <span class="altura">Altura(M)</span>
+                <input type="text" name="height" class="height" maxlength="4" autocomplete="off">
+            </div>
+            <div class="bnts">
+                <input type="button" value="Enviar" class="send">
+                <input type="button" value="Limpar" class="reset">
+            </div>
+            <div class="IMC_TEXT_RESULT">
+                <div class="IMC_DISPLAY"></div>
+            </div>
+            <div class="IMC_LIMITS">
+                <div class="below"></div>
+                <div class="normal"></div>
+                <div class="above"></div>
+                <div class="obesity_extreme"></div>
+                <div class="danger"></div>
+                <div class="arrow_pin"></div>
+            </div>
+        </div>
+        <div class="MSN_ERRORS">
+            <span>[ERROR]</span>
+            <span>Preencha os dados Corretamente!</span>
+        </div>
+        
+        <div class="IMC_BODY_DESC">
+            <div class="IMC_LEVELS">
+                <div class="below_desc"></div>
+                <div class="normal_desc"></div>
+                <div class="above_desc"></div>
+                <div class="obesity_extreme_desc"></div>
+                <div class="danger_desc"></div>
+            </div>
+            <div class="IMC_DESCR">
+                <span class="below_txt">Abaixo do Normal - 18,5</span>
+                <span class="normal_txt">Peso Normal - 18,5 a 24,9</span>
+                <span class="above_txt">Excesso de Peso - 25 a 29,9</span>
+                <span class="obsi_txt">Obesidade - 30 a 39,9</span>
+                <span class="obsi_mor_txt">Obsidade Morbida - 40+</span>
+            </div>
+        </div>
+    </form>
+    <script src="JS/IMC_SCRIPT.js"></script>
+</body>
+</html>
+
+
+
